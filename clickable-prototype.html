@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orbit Home</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+  <!--remove href or it will autorefresh-->
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">My Site</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="active"><a href="#">Right Button Active</a></li>
+        <li class=""><a href="#">Right Button</a></li>
+        <li class=""><a href="#">Right Button </a></li>
+        <li class="has-dropdown">
+          <a href="#">Right Button Dropdown</a>
+          <ul class="dropdown">
+            <li><a href="#">First link in dropdown</a></li>
+            <li class="active"><a href="#">Active link in dropdown</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li><a href="#">Left Nav Button</a></li>
+      </ul>
+    </section>
+  </nav>
+
+
+  <div class="row">
+    <div class="medium-8 columns">
+      <ul class="songs medium-block-grid-4">
+        <li class="active">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class=" secondary button expand round tiny">details</a>
+        </li>
+
+        <li class="">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class="secondary button expand round tiny">details</a>
+        </li>
+
+        <li class="">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class="secondary button expand round tiny">details</a>
+        </li>
+
+        <li class="">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class="secondary button expand round tiny">details</a>
+        </li>
+
+        <li class="">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class="secondary button expand round tiny">details</a>
+        </li>
+
+        <li class="">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class="secondary button expand round tiny">details</a>
+        </li>
+
+        <li class="">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class="secondary button expand round tiny">details</a>
+        </li>
+
+        <li class="">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class="secondary button expand round tiny">details</a>
+        </li>
+
+        <li class="">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class="secondary button expand round tiny">details</a>
+        </li>
+
+        <li class="">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class="secondary button expand round tiny">details</a>
+        </li>
+
+        <li class="">
+          <img src="http://placehold.it/400x400" alt=""/>
+          <p>Lorem ipsum dolor</p>
+          <a data-reveal-id="album-details-modal" class="secondary button expand round tiny">details</a>
+        </li>
+
+
+
+      </ul>
+    </div>
+
+    <div class="medium-4 columns">
+
+      <ul class="music-by-type button-group even-3">
+        <li class="active"><a class="button small secondary">Artist</a></li>
+        <li><a class="button small secondary">Album</a></li>
+        <li><a class="button small secondary">Genre</a></li>
+      </ul>
+
+
+      <!--TODO: THIS STUFF (Make Panel Appear)-->
+        <label>Choose Your Favorite</label>
+        <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+        <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+
+
+    <div class="panel pokemon-panel">
+      <h5 class="text-center">Poke Blue</h5>
+
+      <label for="name">Name</label>
+      <input name="name" type="text">
+
+      <label for="age">Age</label>
+      <input name="age" type="text">
+
+      <input type ="submit" class="button expand success" value="Save $raquo;">
+    </div>
+    </div>
+
+
+  <!--reveal modals-->
+
+  <div id="album-details-modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2 id="modalTitle">Awesome. I have it.</h2>
+    <p class="lead">Your couch.  It is mine.</p>
+    <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

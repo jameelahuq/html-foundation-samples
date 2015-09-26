@@ -1,0 +1,164 @@
+@import "settings";
+@import "foundation";
+@import "header";
+
+
+
+//global vars go here
+
+//partials go here
+
+//views go here
+
+//deleted all this selective included components from here
+
+
+
+header {
+  section.main-nav {
+    padding-top: rem-calc(15-8);
+    padding-bottom: rem-calc(15);
+    background: $primary-color;
+    color: #FFF;
+    .inline-list {
+      margin-top: rem-calc(20);
+      margin-bottom: 0;
+      font-size: rem-calc(18);
+
+
+      li {
+        height: rem-calc(24);
+        border-left: solid 1px white;
+        margin-left: rem-calc(5);
+        padding-left: rem-calc(5);
+        line-height: 1.2;
+        &:nth-child(1) {
+          border: none;
+        }
+      }
+    }
+    h3 {
+      padding-top: rem-calc(8);
+      font-size: rem-calc(24);
+    }
+    h3, a {
+      color: #FFF;
+    }
+
+  }
+  .main-sub-nav ul.inline-list {
+    margin-bottom: rem-calc(5);
+    margin-top: rem-calc(5);
+
+    li {
+      border-left: solid 1px #919191;
+      margin-left: rem-calc(5);
+      padding-left: rem-calc(5);
+      line-height: 1.2;
+      font-size: rem-calc(18);
+      height: rem-calc(24);
+      &:nth-child(1) {
+        border: none;
+      }
+    }
+    a {
+      color: #919191;
+    }
+  }
+
+}
+
+section.portfolio, section.quotes {
+  padding-top: rem-calc(15);
+  padding-bottom: rem-calc(15);
+}
+
+section.portfolio {
+  @include grid-row();
+  background: #EEECEE;
+
+  arcile {
+    @include grid-column(4);
+  }
+  h4 {
+    margin-top: rem-calc(5);
+    margin-bottom: 0;
+  }
+  p {
+    line-height: 1.2;
+  }
+  .card {
+    background: #fff;
+    //border: solid 1px #666;
+    -moz-box-shadow: 2px 2px 3px 0px rgba(44, 73, 74, 00.44);
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(44, 73, 74, 00.44);
+    box-shadow: 2px 2px 3px 0px rgba(44, 73, 74, 00.44);
+
+
+    h4, p{
+      padding-left: rem-calc(10);
+      padding-right: rem-calc(10);
+    }
+    img {
+      margin-bottom: rem-calc(15);
+    }
+    .button{
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+section.quotes {
+  background: $primary-color;
+  img {
+    border-radius: 100%;
+    margin-bottom: rem-calc(15)
+  }
+  h4, p {
+    color: white;
+  }
+}
+
+footer {
+  background: #C1C1C1;
+}
+
+
+header, footer {
+  ul.inline-list {
+    text-transform: uppercase;
+  }
+}
+
+
+.songs {
+  li.active {
+    img {
+      border: solid 4px $primary-color;
+    }
+    p {
+      color: $primary-color;
+    }
+  }
+}
+
+.music-by-type li.active .button {
+      padding-bottom: 11px !important;
+      border-bottom: solid 4px darken($secondary-color, 30%);
+    }
+
+
+.triangle {
+  height: 100px;
+  width: 100px;
+  background: red;
+
+  border-top: solid 25px rgba(#000, 0.0);
+  border-bottom: solid 50px purple;
+  border-right: solid 50px hotpink;
+  border-left: solid 25px orange;
+
+
+}
